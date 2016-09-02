@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title> HTML form </title>
+</head>
+	<body>
+		<div style="background-color:#eeeeee; color:black; float:center; padding:50px 400px 400px;">
+			<h1 style="text-align:center;"> HTML form exercise </h1>
+				<p> <span style="color:red"> Please note: </span>This Example demonstrate how HTML forms can be used. Submit button should submit the button and reset button should reset the form(revert the changes in form fields). The form layout should be the same as below. </p>
+					<p> <b> Contact form </b> </p>
+
+					<form action="demo_form.asp">
+				    <table>
+					<tr> 
+					<th><label for="Your name:">Your Name*:</label>
+					<td><input type="text" name="name" required></td>
+					</th>
+					</tr>
+					<tr>
+					<th><label for="E-mail:">E-mail*:</label>
+					<td><input type="text" name="e-mail" required></td>
+					</th>
+					</tr>
+					<tr>
+					<th><label for="Phone Number:">Phone Number:</label>
+					<td><input type="text" name="phone number"></td>
+					</th>
+					</tr>
+					<tr>
+					<th><label for="Website:">Website:</label>
+					<td><input type="text" name="website" value="http://" required></td>
+					</th>
+				    </tr>
+					<tr>
+					<th><label for="Comments:">Comments*:</label>
+					<br>
+					<td><textarea name="message" rows="10" cols="22" required> </textarea></td>
+					</th>
+					</tr>
+					<tr>
+					<th><label for="Your name:">Your Name:</label> 
+					<td><input type="text"></td>
+					</th>
+					</tr>
+					<tr>
+					<th><label for="Password:">Password:</label> 
+					<td><input type="password" pattern="\w{8}" tittle="8 character password"></td>
+					</th>
+					</tr>
+					<tr>
+					<th>
+					Do you like pizza?<br>
+					<td><label for="yes">Yes</label>
+						<input type="radio" name="choice" id="yes" value="Yes"><br>
+					<label for="no">No</label>
+						<input type="radio" name="choice" id="no" value="No"><br>
+					<label for="maybe">Maybe</label>
+						<input type="radio" name="choice" id="maybe" value="Maybe"><br>
+					<label for="nevertried">Never Tried</label>
+						<input type="radio" name="choice" id="never tried" value="Never Tried"><br></td>
+						</th>
+						</tr>
+						<tr>
+						<th>
+						<td><input type="checkbox" name="choice"> Check this box if you like our service</td>
+						</th>
+						</tr>
+						<tr>
+						<th>
+					Anything you would like to say 
+					<td><textarea name="message" rows="10" cols="22"> </textarea></td>
+						</th>
+						</tr>
+						<tr>
+						<th><p> <b> I like </b> </p>
+						<td><select multiple size="5">
+						<option value="mushrooms">mushroom</option>
+						<option value="olives">olives</option>
+						<option value="onions">onions</option>
+						<option value="tomatoes">tomatoes</option>
+						<option value="green peppers">green peppers</option>
+						</select></td>
+						</th>
+						</tr>
+						<tr>
+						<th><p> <b> Menu </b> </p>
+					<td>Your favourite color:
+					<select name="colors">
+						<option value="red">red</option>
+						<option value="blue">blue</option>
+						<option value="black">black</option>
+						<option value="yellow">yellow</option>
+					</select></td>
+					</th>
+					</tr>
+						<tr>
+						<th><p> <b> Attach file </b> </p> 
+					<td>Attach: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*" ></td>
+						</th>
+						</tr>
+						<tr>
+						<th><p> <b> Buttons </b> </p>
+					<td><button type="submit" onlick="alert('Form has been submitted')">Submit</button>
+					<button type="reset">Reset</button></td>
+					</th>
+					</tr>
+				</form>
+		</div>
+	</body>
+</html>
